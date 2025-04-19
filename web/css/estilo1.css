@@ -1,0 +1,25 @@
+@import url(style.css);
+/* se pueden integrar unas 
+    hojas externas dentro de otras*/
+
+
+body {background-color: rgb(202, 210, 210);}
+
+p {border-bottom-width: 4px;
+    border-style: solid;
+border-color: rgb(41, 68, 68);}
+p:hover{color: blueviolet;}
+
+#id1 {font-weight: 20px;}
+
+#id2 , #id3 { font-size: large;
+        ;}
+
+/*id tiene preferencia sobre clase*/
+.clase1 {font-size:x-large; }
+
+a:visited {color: brown;
+font-size: x-small;}
+/* este font-size no funciona, no se pq */
+/* Posiblemente pq las nuevas versiones no soportan
+    algunos tamaños que han quedado desfasados */

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+
+    <link rel="icon" href="images/hollowknight.jpg">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="js/register.js" type="module"></script>
+    
+</head>
+
+
+
+<body class="dark">
+
+    <a href="index.html">Return to index</a>
+
+    <form>
+
+        <div class="row">
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="firstname-input">First name:</label>
+                    <input type="text" class="form-control text-light bg-dark" id="firstname-input" name="firstName"
+                        placeholder="First name">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="lastname-input">Last name:</label>
+                    <input type="text" 
+                    class="form-control text-light bg-dark" 
+                    id="lastname-input" 
+                    name="lastName"
+                        placeholder="Last name">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="email-input">Email:</label>
+                    <input type="text" 
+                    class="form-control text-light bg-dark" 
+                    id="email-input" name="Email"
+                        placeholder="Email!">
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="phone-input">Phone:</label>
+                    <input type="text" 
+                    class="form-control text-light bg-dark" 
+                    id="phone-input" 
+                    name="Phone!"
+                        placeholder="Phone!!">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="username-input">Username:</label>
+                    <input type="text" 
+                    class="form-control text-light bg-dark" 
+                    id="username-input" name="username"
+                        placeholder="Username">
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="password-input">Password:</label>
+                    <input type="text" 
+                    class="form-control text-light bg-dark" 
+                    id="password-input" 
+                    name="Password"
+                        placeholder="password">
+                </div>
+            </div>
+
+            <div class="col-md">
+                <div class="form-group">
+                    <label for="repeatpassword-input">
+                        Repeat password:</label>
+                    <input type="text" 
+                    class="form-control text-light bg-dark" 
+                    id="repeatpassword-input" 
+                    name="repeatpassword"
+                        placeholder="Password again">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md text-center">
+                <button type="submit" 
+                class="btn btn-primary">Register</button>
+            </div>
+        </div>
+            
+
+    </form>
+        
+
+    <!-- Ejemplo 1 formulario clase -->
+    <!--
+    <form>
+        <div class="container">
+            <div class="form-group">
+                <label for="username-input">Username:</label>
+                <input type="text" class="form-control" id="username-input" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <label for="password-input">Password:</label>
+                <input type="password" class="form-control" id="password-input" name="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+        -->
+
+    <div class="form-group">
+        <label for="select-input">Select element from a list:</label>
+        <select class="form-control" id="select-input" name="select">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+        </select>
+    </div>
+    
+    
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="checkbox-id" name="checkbox">
+        <label class="form-check-label" for="checkbox-id">
+            Option with a checkbox
+        </label>
+    </div>
+
+
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio-button" value="1" checked>
+        <label class="form-check-label">
+            Option 1
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="radio-button" value="2">
+        <label class="form-check-label">
+            Option 2
+        </label>
+    </div>
+                
+    <button type="button" class="btn btn-primary">Press me!</button>
+
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    
+    <button type="button" class="btn btn-primary">Enabled</button>
+    <button type="button" class="btn btn-primary" disabled>Disabled</button>
+    
+    This photo has the following categories:
+    <span class="badge bg-primary">Landscapes</span>
+    <span class="badge bg-primary">Nature</span>
+
+
+    <ul class="list-group">
+        <li class="list-group-item-primary">Element 1</li>
+        <li class="list-group-item-secondary">Element 2</li>
+        <li class="list-group-item-success">Element 3</li>
+        <li class="list-group-item-warning">Element 4</li>
+    </ul>
+    
+
+    <div class="row">
+        <div class="col-md-4">
+    
+            <div class="card text-light bg-dark">
+                <img src="images/hollowknight.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Card title</h5>
+                    <p class="card-text">Card text</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+
+    <!--
+    <h2>Register a new user:</h2> -->
+    <!-- div causa que se junte todo, mientras que p
+     deja espacios. Aunque los espacios los solucionamos 
+     con style.css -->
+<!--
+    <form>
+        <div class="input-group">
+            <label for="firstname-input">First name:</label>
+            <input type="text" id="firstname-input" 
+            name="firstName" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="lastname-input">Last name:</label>
+            <input type="text" id="lastname-input" 
+            name="lastName" required>
+        </div>   -->
+        <!-- no hace falta terminar el parrafo con </p> -->
+<!--        <div class="input-group">
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" 
+            name="email" required>
+        </div>
+        <div class="input-group">
+            <label for="telephone-input">Telephone:</label>
+            <select name="prefix" id="prefix-input">
+                <option value="34">Spain (+34)</option>
+                <option value="1">USA (+1)</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" id="telephone-input" 
+            name="telephone" required>
+        </div>
+        <div class="input-group">
+            <label for="username-input">Username:</label>
+            <input type="text" id="username-input" 
+            name="username" required>
+        </div>
+        <div class="input-group">
+            <label for="password-input">Password:</label>
+            <input type="password" id="password-input" 
+            name="password" required>
+        </div>
+        <div class="input-group">
+            <label for="password2-input">Repeat your password:</label>
+            <input type="password2" id="password2-input" name="password2" required>
+        </div>
+        <div class="input-group">
+            <input type="submit">
+        </div>
+    </form>
+-->
+</body>
+
+</html>

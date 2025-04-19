@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+         initial-scale=1.0">
+    <title>Index</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="js/utils/include.js"></script>
+
+    <link rel="icon" href="images/crow.jpg">
+
+    <script src="js/index.js" type="module"></script>
+
+    
+
+</head>
+
+
+<body class="dark">
+
+    <div id="page-header"></div>
+
+    <div id="dom-test"></div> <!--DOM test -->
+    <!-- <div id="gallery"></div>
+        card hecha con js -->
+
+    <script>
+    include("header.html", "#page-header");
+    </script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    <div class="container-fluid">
+
+        
+
+        <a class="navbar-brand" href="#">Navigation index</a>
+        <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" aria-label="Toggle
+            navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Recent photos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Trending photos
+                    </a>
+                    <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item text-light" href="trending_users.html">Trending users</a></li>
+                        <li><a class="dropdown-item text-light" href="trending_photos.html">Trending photos
+                            </a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+
+    <!--
+    <div class="container">
+        <div class="row">
+            <div id="page-header"></div> -esto incluye la
+                            cabecera que hayamos hecho-
+                                    </div>
+
+                                    <div class="row">
+                                        fila 1
+                                    </div>
+                                </div>   
+        -->
+    
+    <!--Ejemplo columnas y filas, no se ven bien sin ventana
+    a tamaño completo, a menos que lo editemos 
+    para darle el atributo small en lugar de medium -->
+    
+    <!--     
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm">
+                Row 1 Column 1
+            </div>
+            <div class="col-sm">
+                Row 1 Column 2
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-sm">
+                Row 2 Column 1
+            </div>
+            <div class="col-sm">
+                Row 2 Column 2
+            </div>
+            <div class="col-sm">
+                Row 2 Column 3
+            </div>
+        </div>
+
+            <div class="row text-center">
+            <div class="col-md-9">
+            Wide column (75 %)
+            </div>
+            <div class="col-md">
+            This column takes up the remaining space
+            </div>
+            </div>
+     
+
+    </div> -->
+ 
+
+    <!-- test botón con link, en lugar del link solo-->
+
+    <!--
+    <button onclick="window.location.href='register.html'">
+        Go to Register.html</button>
+
+    <a href="register.html">Go to Register.html</a> 
+    -->
+
+
+
+    <!-- unordered/ordered list from lab1:
+     con ordered les añade indices numericos -->
+    <!-- <p>My shopping list:</p>
+    <ol>
+        <li>Oranges</li>
+        <li>Pears</li>
+        <li>Apples</li>
+    </ol> -->
+
+    <!--Photos grid-->
+    <a href="upload_picture.html"> Upload a new picture</a>
+
+    <div id="gallery"></div>
+    <!-- <div class="gallery-container"> -->
+
+        
+
+
+</body>
+
+</html>

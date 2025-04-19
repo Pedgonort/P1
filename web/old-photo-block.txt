@@ -1,0 +1,213 @@
+
+<div class="col-md-4"> <!-- Imagen 1 -->
+
+                <div class="card bg-dark text-light">
+                    <a href="photo_detail.html">  
+                        <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Samoyed</h5>
+                        <p class="card-text">A very good boy.</p>
+                        <p class="text-end">@user1</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-light">
+                    <a href="photo_detail.html">  
+                        <img src="images/hollowknight.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Not samoyed</h5>
+                        <p class="card-text">Also a very good boy.</p>
+                        <p class="text-end">@user1</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card bg-dark text-light">
+                    <a href="photo_detail.html">  
+                        <img src="images/politecnicaUS.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Escuela</h5>
+                        <p class="card-text">Bad boy</p>
+                        <p class="text-end">@user2</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+-------------------------------------------------------------
+
+<div class="photo-block"> <!-- Imagen 1 -->
+
+        <div class="photo-header-block">
+            <h2 class="photo-title">Samoyed</h2>
+            <h3 class="photo-score">Score: 4.52</h3>
+        </div>
+
+        <div class="photo-image-block">
+        
+            <a href="photo_detail.html"> 
+            <img class="photo-image" 
+            src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" 
+            alt="Esto deberia ser un perro" title="Un perro"
+            >  </a>
+            <!--title sale al hacer hover, 
+            alt es para cuando no carga la img-->
+        </div>
+
+        <div class="photo-metadata-block">
+            <p class="photo-description">A very good boy.</p>
+        </div>
+
+        <div class="photo-edit-block">
+            <button>Edit this photo</button>
+            <button>Delete this photo</button>
+        </div>
+
+    </div>
+
+
+    <div class="photo-block"> <!-- Imagen 2 -->
+
+        <div class="photo-header-block">
+            <h2 class="photo-title">Not Samoyed</h2>
+            <h3 class="photo-score">Score: 9.5</h3>
+        </div>
+
+        <div class="photo-image-block">
+            <a href="images/hollowknight.jpg">
+            <img class="photo-image" 
+            src="images/hollowknight.jpg" 
+            alt="Hollow knight img" title="Zelda"
+            >  </a>
+            <!--title sale al hacer hover, 
+            alt es para cuando no carga la img-->
+        </div>
+
+        <div class="photo-metadata-block">
+            <p class="photo-description">Also a very good boy.</p>
+        </div>
+
+        <div class="photo-edit-block">
+            <button>Perhaps edit this photo</button>
+            <button>Delete this photo</button>
+        </div>
+
+    </div>
+
+
+    <div class="photo-block"> <!-- Imagen 3 -->
+
+        <div class="photo-header-block">
+            <h2 class="photo-title">Ojalá fuese un perro</h2>
+            <h3 class="photo-score">Score: 3</h3>
+        </div>
+
+        <div class="photo-image-block">
+            <img class="photo-image" 
+            src="images/politecnicaUS.jpg" 
+            alt="Es mas bonito cuando no sale" title="Sufrimiento"
+            >
+            <!--title sale al hacer hover, 
+            alt es para cuando no carga la img-->
+        </div>
+
+        <div class="photo-metadata-block">
+            <p class="photo-description">Bad boy.</p>
+        </div>
+
+        <div class="photo-edit-block">
+            <button>BOTON INUTIL</button>
+            <button>Please delete this (photo)</button>
+        </div>
+
+    </div>
+
+
+
+-----------------------------------------------------------
+
+checkpoint antes de renderer grande
+
+
+
+
+<div class="container">
+            <div class="row text-center">
+                <div class="col-md">
+                    <h3>Recent pictures</h3>
+                </div>
+                <hr>
+            </div>
+        
+            
+        
+            <div class="row text-center">
+
+
+                <div class="col-md-4"> <!-- Imagen 1 -->
+                
+                    <div class="card bg-dark text-light">
+                        <a href="photo_detail.html">
+                            <img src="https://i.ibb.co/tY1Jcnc/wlZCfCv.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Samoyed</h5>
+                            <p class="card-text">A very good boy.</p>
+                            <p class="text-end">@user1</p>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+                <div class="col-md-4">
+                
+                    <div class="card bg-dark text-light">
+                        <a href="photo_detail.html">
+                            <img src="images/hollowknight.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Not samoyed</h5>
+                            <p class="card-text">Also a very good boy.</p>
+                            <p class="text-end">@user1</p>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                
+                <div class="col-md-4">
+                
+                    <div class="card bg-dark text-light">
+                        <a href="photo_detail.html">
+                            <img src="images/politecnicaUS.jpg" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Escuela</h5>
+                            <p class="card-text">Bad boy</p>
+                            <p class="text-end">@user2</p>
+                        </div>
+                    </div>
+                
+                </div>
+
+            </div>
+            
+        </div>

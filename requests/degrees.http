@@ -1,0 +1,26 @@
+@BASE = http://127.0.0.1:8080/api/v1
+
+//GET {{BASE}}/degrees/2
+
+//POST {{BASE}}/register  
+//Content-Type: application/json  
+
+//{  
+//  "firstName": "Elvis",  
+//  "surname": "Presley",  
+//  "dni": "98421245J",  
+//  "birthDate": "1935-01-08",  
+//  "accessMethod": "Titulado Extranjero",  
+//  "email": "elvis@alum.us.es",  
+//  "password": "elvis1234"  
+//}
+
+# @name login
+POST {{BASE}}/login
+Content-Type: application/json
+
+{
+    "email": "elvis@alum.us.es",  
+    "password": "elvis1234"  
+}
+
