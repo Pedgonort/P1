@@ -157,14 +157,17 @@ class="card-img-top">
         url: "https://clipartart.com/images/worst-clipart-ever-1.jpg",
         date: "14/08/2019",
         },
-        ];
-        let gallery = galleryRenderer.asCardGallery(photos);
-        container.appendChild(gallery);
+    ];
+    let gallery = galleryRenderer.asCardGallery(photos);
+    container.appendChild(gallery);
 
+        // ------------------------------------------
 
-    console.log("photoRenderer.asCard:", photoRenderer.asCard(photo));
-    console.log("galleryRenderer.asCardGallery:", galleryRenderer.asCardGallery(photos));
-        
+    let button = document.getElementById("test-button");
+        button.onclick = function (event) {
+        alert("You've pressed the button!");
+        };
+      
 }
 
 
