@@ -11,15 +11,21 @@ DB_CONN = {
     "port": 3306,
     "username": "i2",
     "password": "i2",
-    "database": "grados",
+    "database": "gallery", 
+    #OLDs "database":"grados",
 }
 
 # The sequence of SQL scripts located in the sql/ folder that must
 # be ran when the 'silence createdb' command is issued
 SQL_SCRIPTS = [
-    # Reference your sql files here, e.g. "create_tables.sql"
-    "tables.sql",
-    "populate.sql",
+    # Reference your sql files here, 
+    # e.g. "create_tables.sql"
+    "create_tables.sql",
+    "create_views.sql",
+    "populate_database.sql",
+    # OLDs
+    #"tables.sql",
+    #"populate.sql",
 ]
 
 # The port in which the API and the web server will be deployed
@@ -32,9 +38,13 @@ API_PREFIX = "/api/v1"
 # Uncomment this and set up your own table and columns:
 
 USER_AUTH_DATA = {
-    "table": "Students",
-    "identifier": "email",
+    "table": "Users",
+    "identifier": "username",
     "password": "password",
+    # OLDs
+    # "table": "Students",
+    # "identifier": "email",
+    # "password": "password",
 }
 
 # A random string that is used for security purposes
