@@ -1,4 +1,5 @@
 "use strict";
+import { photoswithusersAPI_auto } from "/js/api/_photoswithusers.js";
 import { photosAPI_auto } from "/js/api/_photos.js";
 import { galleryRenderer } from "/js/renderers/gallery.js";
 import { messageRenderer } from "/js/renderers/messages.js";
@@ -10,8 +11,8 @@ async function main() {
 
 async function loadAllPhotos() {
     let galleryContainer = document.querySelector("div.container");
-    try {
-        let photos = await photosAPI_auto.getAll();
+    try {             //   photosAPI_auto
+        let photos = await photoswithusersAPI_auto.getAll();
         let cardGallery = galleryRenderer.asCardGallery(photos);
         galleryContainer.appendChild(cardGallery);
     } catch (err) {
@@ -19,6 +20,7 @@ async function loadAllPhotos() {
     }
 }
 
+document.addEventListener("DOMContentLoaded", main);
 
 
 //   // PRE-API INDEX.JS
@@ -220,7 +222,6 @@ async function loadAllPhotos() {
 
 
 
-document.addEventListener("DOMContentLoaded", main);
 
 
 
