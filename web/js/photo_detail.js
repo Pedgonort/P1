@@ -9,13 +9,40 @@ let photoId = urlParams.get("photoId");
 console.log("The photo ID to load is: " + photoId);
 
 async function main() {
+    // Assign the handler function to the delete button
+    let deleteBtn = document.querySelector("#button-delete");
+    deleteBtn.onclick = handleDelete;
+    let editBtn = document.querySelector("#button-edit");
+    editBtn.onclick = handleEdit;
+
+
+    // esto de abajo sobra?? de momento no molesta
+
     // Check that we have an ID before doing anything else
     if (photoId === null) {
         messageRenderer.showErrorMessage("Please, provide a photoId");
         return;
     }
     loadPhotoDetails();
+
 }
+
+function handleEdit(event) {
+    window.location.href = "edit_photo.html?photoId=" + photoId;
+}
+
+async function handleDelete(event) {
+    let answer = confirm("Do you really want to delete this photo?");
+    if (answer) {
+        try {
+            await photosAPI_auto.delete(photoId);
+            window.location = "/index.html";
+        } catch (err) {
+            messageRenderer.showErrorMessage(err.response.data.message);
+        }
+    }
+}
+    
 
 async function loadPhotoDetails() {
     let photoContainer = document.querySelector("#photo-details-column");
