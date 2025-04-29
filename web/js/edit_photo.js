@@ -1,6 +1,7 @@
 "use strict";
-import { photosAPI } from "/js/api/photos.js";
+import { photosAPI_auto } from "/js/api/_photos.js";
 import { messageRenderer } from "/js/renderers/messages.js";
+import { sessionManager } from "/js/utils/session.js";
 
 // "auth_required": false, -> poner a true en lab8
 // está en endpoint > photos > create
@@ -42,9 +43,7 @@ async function handleSubmitPhoto(event) {
     let formData = new FormData(form);
     if (currentPhoto === null) { // Creating a new photo
         // Add the current user ID
-        // es temporal hasta que podamos verlo en lab8
-        // sin tener que ponerlo artificial
-        formData.append("userId", 1);
+        formData.append("userId", sessionManager.getLoggedId());
         try {
             let resp = await photosAPI_auto.create(formData);
             let newId = resp.lastId;

@@ -2,6 +2,8 @@
 import { photoRenderer } from "/js/renderers/photos.js";
 import { photosAPI_auto } from "/js/api/_photos.js";
 import { messageRenderer } from "/js/renderers/messages.js";
+import { sessionManager } from "/js/utils/session.js";
+
 
 // Get the ID of the photo to load from the URL params
 let urlParams = new URLSearchParams(window.location.search);
@@ -15,8 +17,10 @@ async function main() {
     let editBtn = document.querySelector("#button-edit");
     editBtn.onclick = handleEdit;
 
+    hideActionsColumn();
 
-    // esto de abajo sobra?? de momento no molesta
+    // esto de abajo sobra?? 
+    // almenos de momento no molesta
 
     // Check that we have an ID before doing anything else
     if (photoId === null) {
@@ -25,6 +29,12 @@ async function main() {
     }
     loadPhotoDetails();
 
+}
+function hideActionsColumn() {
+    let actions_col = document.getElementById("actions-col");
+    if (!sessionManager.isLogged()) {
+        actions_col.style.display = "none";
+    }
 }
 
 function handleEdit(event) {
